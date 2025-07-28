@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO: Título e Meta Tags -->
+  <title>Cotação de Seguros e Produtos Bancários | Envie via WhatsApp</title>
+  <meta name="description" content="Solicite agora sua cotação de seguros e produtos financeiros como seguro de carro, seguro de vida, empréstimo, consórcio e mais. Atendimento personalizado via WhatsApp.">
+  <meta name="keywords" content="cotação seguro, seguro auto, seguro vida, consórcio, empréstimo, financiamento, cartão de crédito, produtos bancários">
+  <meta name="author" content="Sua Empresa Financeira">
+  <link rel="canonical" href="https://www.seusite.com.br/cotacao">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- CSS Interno -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #005baa;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 28px;
+    }
+
+    header p {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1ebe5d;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Solicite sua Cotação SEGUROS,CONSÓRCIOS ENTRE OUTROS...</h1>
+    <p>Seguros e produtos financeiros com atendimento via WhatsApp</p>
+  </header>
+
+  <main>
+    <form id="form-cotacao">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+
+        <label for="telefone">Telefone com DDD:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(DDD) 91234-5678" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Produto de Interesse</legend>
+
+        <label for="produto">Selecione o produto desejado:</label>
+        <select id="produto" name="produto" required>
+          <option value="">-- Selecione --</option>
+          <option value="Cotação de Seguro Auto">Cotação de Seguro Auto</option>
+          <option value="Cotação de Seguro de Vida">Cotação de Seguro de Vida</option>
+          <option value="Cotação de Seguro Residencial">Cotação de Seguro Residencial</option>
+          <option value="Financiamento de Veículo">Financiamento de Veículo</option>
+          <option value="Consórcio">Consórcio</option>
+          <option value="Empréstimo Pessoal">Empréstimo Pessoal</option>
+          <option value="Cartão de Crédito">Cartão de Crédito</option>
+          <option value="Outros">Outros</option>
+        </select>
+
+        <label for="mensagem">Mensagem adicional:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Ex: veículo desejado, valor aproximado, dúvidas..."></textarea>
+      </fieldset>
+
+      <button type="submit">Enviar via WhatsApp</button>
+    </form>
+  </main>
+
+  <!-- JavaScript de Envio via WhatsApp -->
+  <script>
+    document.getElementById("form-cotacao").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value.trim();
+      const cpf = document.getElementById("cpf").value.trim();
+      const telefone = document.getElementById("telefone").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const cidade = document.getElementById("cidade").value.trim();
+      const estado = document.getElementById("estado").value.trim();
+      const produto = document.getElementById("produto").value;
+      const mensagem = document.getElementById("mensagem").value.trim();
+
+      const numeroWhatsApp = "5527999497001"; // Substitua pelo seu número
+
+      const texto = `Olá, gostaria de solicitar uma cotação:
+🧑 Nome: ${nome}
+📄 CPF: ${cpf}
+📞 Telefone: ${telefone}
+📧 E-mail: ${email || "Não informado"}
+📍 Localização: ${cidade} - ${estado}
+📌 Produto: ${produto}
+📝 Observações: ${mensagem || "Nenhuma."}`;
+
+      const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+      window.open(url, "_blank");
+    });
+  </script>
+</body>
+</html>
